@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import Login from './components/auth/loginPage';
+import Register from './components/auth/registerPage';
+import Login from './components/auth/loginPage';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Home from './components/home/home';
+import LandingPage from './components/landingPage';
+import Profile from './components/profile/profile';
+import {connect} from 'react-redux';
 
-function App() {
+// css
+import './assets/css/global-style.css';
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={LandingPage}/>
+          <Route exact path="/chats/" component={Home} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path={"/" + props.profile.username} component={Profile} />
+          <Route exact path="/chats/:id" component={Home} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+      profile: state.firebase.profile
+  }
+}
+
+export default connect(mapStateToProps)(App);

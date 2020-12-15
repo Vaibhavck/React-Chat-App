@@ -1,0 +1,12 @@
+.navlinks{
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link{
+    color: azure;
+}
+
+.nav-link:hover{
+    color: red;
+}

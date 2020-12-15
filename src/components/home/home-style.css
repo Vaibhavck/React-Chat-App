@@ -1,0 +1,157 @@
+
+.container-fluid{
+    padding: 0%;
+    margin: 0%;
+}
+
+#float_bar{
+    position: sticky;
+    z-index: 10;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-fluid form{
+    padding: 0%;
+    /* position: fixed; */
+}
+
+.row>*{
+    padding: 0%;
+}
+
+.col-sm{
+    padding: 0;
+    text-align: center;
+    /* background: black; */
+}
+
+#base-text{
+    margin-top: 30vh
+}
+
+#base-text h1{
+    color: aqua;
+}
+
+.chat-list{
+    padding: 20px;
+    height: 80vh;
+    text-align: center;
+    overflow:auto;
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    
+}
+
+.chat-list:not(#people-list){
+    display:flex; 
+    flex-direction:column-reverse;
+}
+
+.profile-item{
+    border: 2px solid black;
+}
+
+.profile-item ul li span{
+    padding-right: 10px;
+}
+
+
+ul img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.chat-list ul img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.online-status i{
+    /* background: red; */
+    color: green;
+    font-size: x-small;
+}
+
+.chat-list ul li span:not(#unreadMsg):not(#person-chat){
+    /* padding-right: 15px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 35vw;
+    text-align: justify;
+}
+
+.chat-msg-sent{
+    margin-right: 2px;
+    border: 2px solid rgb(0, 140, 254);
+    color: white;
+    background: rgb(0, 140, 254);
+    padding: 5px;
+    border-radius: 10px;
+    /* border-bottom-right-radius: 0px; */
+}
+
+.chat-msg-received{
+    margin-left: 2px;
+    border: 2px solid rgb(45, 164, 211);
+    color: white;
+    background: rgb(45, 164, 211);
+    padding: 5px;
+    border-radius: 10px;
+    /* border-bottom-left-radius: 0px; */
+}
+
+#indivisualChat{
+    /* height: 66.5vh; */
+    background: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Neckertal_20150527-6384.jpg");
+    background: url('../../assets/images/pattern.jpg');
+    background: rgb(40, 38, 52);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.msg-input{
+    padding: 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#button-addon2{
+    background: rgb(13, 107, 196);
+    color: white;
+}
+
+#peopleList{
+    background:rgb(40, 38, 52);
+    color: white;
+    border-color: grey;
+}
+
+#peopleList:hover{
+    background: grey;
+}
+
+#chatHeader{
+    background: rgb(37, 37, 37);
+    color: white;
+    border-color: rgb(39, 45, 53);
+}
+
+.msg-time{
+    font-size: medium;
+    color: white;
+}
+
+.MuiAccordionDetails-root{
+    padding: 0%;
+}

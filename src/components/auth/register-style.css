@@ -1,0 +1,24 @@
+
+
+.container-fluid h3{
+    padding-top: 5px;
+    text-align: center;
+}
+
+.container-fluid form{
+    padding: 10px;
+}
+
+.my-carousel{
+    margin-top: 50px;
+    align-items: center;
+    padding: 50px;
+}
+
+#carouselExampleCaptions{
+    border: 5px solid blue;
+}
+
+.d-block{
+    height: 50vh;
+}
